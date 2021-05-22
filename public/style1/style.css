@@ -149,3 +149,94 @@ h3::before {content: "•"; color: red;
     display: block;
     width: 70%;
 }
+@media(max-width:500px){
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    header div{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 70%;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    header figure{
+        position: relative;
+        margin-left: 0px;
+    }
+    #contact h3{
+        position: relative;
+        left:auto;
+    }
+    .contacts {
+        position: relative;
+        
+    }
+    p{  
+        font-size: 12px;
+        margin: 0px -50px 0px 0px;
+        padding-left:-25px;
+    }
+    h4{
+        font-size: 12px;
+    }       
+    .experience-details{
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    #contact{
+        position: relative;
+        bottom: 40px;
+    }
+    .contacts {
+        position: relative;
+        top: 10px;
+        right: 0px;
+        display: block;
+        width: 100%;
+        border-style: solid;
+        border-width: 2px;
+        border-color: lightgray;
+        border-right: none;
+        border-left: none;
+        border-bottom: none;
+        padding-top: 10px;
+    }
+    .contacts dl{
+        display: flex;
+        justify-content: flex-start;
+        margin: 0px;
+        width: 100%;
+        font-size: 10px;
+        
+    }
+    .contacts dl dt{
+        color: white;
+        display: inline-block;
+        background: red;
+        width: 35%;
+        height: 20px;
+        
+
+    }
+    .contacts dl dd{
+        display: inline-block;
+        background: white;
+        margin: 0px;
+        width:65%;
+        padding-left: 5px;
+    }
+    .contacts a{
+        color: red;
+    }
+    #hobbies{
+        font-size: 12px;
+    }
+    #hobbies ul{
+        padding-left: 10px;
+    }
+}
+
