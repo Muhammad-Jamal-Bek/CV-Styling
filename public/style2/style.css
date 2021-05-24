@@ -1,0 +1,236 @@
+body{
+    padding: 0px 15% 0px 15%;
+}
+h2{
+    display: none;
+}
+hgroup{
+    border-style: solid;
+    border-color: lightgray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+figure{
+    position: absolute;
+    left:70%;
+    top:20px;
+    transform: scale(1.5,1.5) rotate(-20deg);
+}
+p{
+    font-size: 15px;
+    text-align: justify;
+}
+#about{
+    width: 75%;
+    padding-bottom: 50px;
+}
+#about h3{
+    display: none;
+}
+#competencies{
+    display: flex;
+    flex-direction: row;
+}
+#competencies h3{
+    height: 100px;
+    border-right: 1px solid;
+}
+.skills-primary{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 15px !important;
+}
+[data-skill="5"] span{
+    background: lightseagreen;
+    margin: 0px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
+}
+[data-skill="3"] span{
+    background: lightseagreen;
+    margin: 10px 10px 10px 10px;
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
+}
+[data-skill="1"] span{
+    background: lightseagreen;
+    margin: 10px 10px 10px 10px;
+    font-size: 15px;
+    padding: 5px 5px 5px 5px;
+}
+[data-skill="5"] span::after{
+    content: " ★★★";
+    padding-left: 25px;
+}
+[data-skill="3"] span::after{
+    content: " ★★";
+    padding-left: 50px;
+}
+[data-skill="1"] span::after{
+    content: " ★";
+    padding-left: 45px;
+}
+.skills-secondary{
+    position: absolute;
+    left: 342px;
+    top: 310px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    color: white;
+    margin: auto;
+    font-size: 10px !important;
+}
+[data-skill="9"] span{
+    background: lightseagreen;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
+}
+[data-skill="7"] span{
+    background: lightseagreen;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
+}
+[data-skill="9"] span::after{
+    content: " ★★★★★";
+    padding-left: 40px;
+}
+[data-skill="7"] span::after{
+    content: " ★★★★";
+    padding-left: 40px;
+}
+#experiences{
+    display: flex;
+    flex-direction: column;
+}
+#experiences h3{
+    height: 100px;
+    width: 145px;  
+}
+.experience{
+    position: relative;
+    left:148px;
+    bottom: 135px;
+    border-left: 1px solid;
+}
+#education h3{
+    height: 100px;
+    width: 145px;  
+}
+.experience-type{
+    color: lightseagreen;
+}
+.experience-institution{
+    display: none;
+}
+.experience-details{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: lightgrey;
+}
+.experience-date-separator{
+    color: lightseagreen;
+}
+#hobbies{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding-top: 0px;
+}
+#hobbies h3{
+    border-right: 1px solid;
+    height: 100px;
+    width: 148px;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#contact h3{
+    display: none;
+}
+
+.contact-type{
+    display: none;
+}
+.contact-value dt{
+    display: none;
+}
+dl dd a{
+    display: none;
+}
+.contact-skype{
+    display: none;
+}
+dl.contact-email dd {
+    background-image: url(../images/email.png);
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+}
+dl.contact-phone dd{
+    background-image: url(../images/phone.png);
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+}
+dl.contact-github dd{
+    background-image: url(../images/github.png);
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+}
+dl.contact-facebook dd{
+    background-image: url(../images/facebook.png);
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+}
+@media(max-width:500px){
+    body{
+        padding: 0px;
+    }
+    figure{
+        position: absolute;
+        left: -10000000000px;
+    }
+    header{
+        padding-top: 20px;
+    }
+    #about{
+        width: 100%;
+    }
+    #about p{
+        width: auto;
+        font-size: 12px;
+        color: gray;
+        padding-left: 10px;
+        padding-right: 10px; 
+     }
+    #competencies
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    #competencies h3{
+        border:none;
+        text-decoration: underline;
+    }
+    .skills-primary{
+        display: flex;
+        flex-direction: row;
+    }
+    .skills-secondary{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    #experiences{
+        display: grid;
+        grid-template-rows: 20% 40% 40%;
+    }
+}
